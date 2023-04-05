@@ -14,7 +14,7 @@ session_start();
 		    die("Connection failed: " . $conn->connect_error);
 		} 
 
-		$sql = "USE apptieib_books_kiran";
+		$sql = "USE BookStore";
 		$conn->query($sql);
 
 		$sql = "SELECT * FROM Book WHERE BookID = '".$_POST['ac']."'";
